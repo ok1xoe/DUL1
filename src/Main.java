@@ -1,19 +1,33 @@
 import com.engeto.seller.Car;
 import com.engeto.seller.CarrotSeller;
 import java.time.LocalDate;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
+        String licensePlate;
+        Pattern p = Pattern.compile("[0-9][A-Z][A-Z0-9][ ][0-9]{4}");
 
         Car car1 = new Car();
         Car car2 = new Car();
 
         car1.setCarId("1");
-        car1.setLicensePlate("4Z0 2548");
+        licensePlate = "4Z0 2548";
+        Matcher m = p.matcher(licensePlate);
+        if (!m.find()) {
+            licensePlate = "Nevalidně zadaná SPZ " + licensePlate + ".";
+        }
+        car1.setLicensePlate(licensePlate);
         car1.setCarConsumption(5.6F);
 
         car2.setCarId("2");
-        car2.setLicensePlate("7Z0 1387");
+        licensePlate = "7Z01387";
+        m = p.matcher(licensePlate);
+        if (!m.find()) {
+            licensePlate = "Nevalidně zadaná SPZ " + licensePlate  + ".";
+        }
+        car2.setLicensePlate(licensePlate);
         car2.setCarConsumption(5.5F);
 
         CarrotSeller seller1 = new CarrotSeller();
