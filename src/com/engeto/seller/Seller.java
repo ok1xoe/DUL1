@@ -53,8 +53,6 @@ public class Seller {
         this.sellerBirthDate = sellerBirthDate;
     }
 
-
-
     public Integer getNumberOfContracts() {
         return numberOfContracts;
     }

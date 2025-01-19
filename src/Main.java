@@ -23,7 +23,6 @@ public class Main {
         seller1.setSellerCar("2");
 
         Seller seller2 = new Seller();
- //       seller2.setSellerId(2);
         seller2.setSellerName("Jan Novák");
         seller2.setSellerAddressCity("Praha");
         seller2.setSellerBirthDate(LocalDate.of(2000,10,25));
