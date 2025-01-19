@@ -1,5 +1,5 @@
 import com.engeto.seller.Car;
-import com.engeto.seller.Seller;
+import com.engeto.seller.CarrotSeller;
 import java.time.LocalDate;
 
 public class Main {
@@ -16,13 +16,13 @@ public class Main {
         car2.setLicensePlate("7Z0 1387");
         car2.setCarConsumption(5.5F);
 
-        Seller seller1 = new Seller();
+        CarrotSeller seller1 = new CarrotSeller();
         seller1.setSellerName("Josef Hnízdo");
         seller1.setSellerAddressCity("Kolín");
         seller1.setSellerBirthDate(LocalDate.of(1970,1,1));
         seller1.setSellerCar("2");
 
-        Seller seller2 = new Seller();
+        CarrotSeller seller2 = new CarrotSeller();
         seller2.setSellerName("Jan Novák");
         seller2.setSellerAddressCity("Praha");
         seller2.setSellerBirthDate(LocalDate.of(2000,10,25));
