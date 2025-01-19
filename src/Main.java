@@ -17,7 +17,6 @@ public class Main {
         car2.setCarConsumption(5.5F);
 
         Seller seller1 = new Seller();
-//        seller1.setSellerId(1);
         seller1.setSellerName("Josef Hnízdo");
         seller1.setSellerAddressCity("Kolín");
         seller1.setSellerBirthDate(LocalDate.of(1970,1,1));
